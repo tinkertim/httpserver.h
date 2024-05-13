@@ -27,4 +27,6 @@ check-format:
 	clang-format --style=LLVM --dry-run -Werror src/*.c
 
 clean:
+	@rm test-results.txt
+	@rm test-results-cpp.txt
 	@rm -rf build
